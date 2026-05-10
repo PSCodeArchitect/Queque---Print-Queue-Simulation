@@ -32,10 +32,7 @@ class PrintTask:
     def tiempo_espera(self):
         return self.inicio - self.llegada
 
-
-# =========================
 # CLASE PRINTER
-# =========================
 class Printer:
     def __init__(self):
         self.documento_actual = None
@@ -255,13 +252,11 @@ tk.Button(
 
 
 # DATOS PARA EL CUADRADO 3
-
 estado_impresion = tk.Label( cuadro3,  text="Impresora libre",  bg="green",  fg="white",  font=("Arial", 14))
 estado_impresion.pack(expand=True)
 
 
 #DATOS PARA EL  CUADRADO 4
-
 estadisticas = tk.Label(cuadro4,  text="Sin estadisticas",  justify="left",  bg="lightyellow",  font=("Arial", 12))
 estadisticas.pack(pady=20)
 ventana.mainloop()
